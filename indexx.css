@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: 'poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    flex-wrap: wrap;
+    
+}
+nav h1{
+    text-transform: capitalize;
+
+    overflow: auto;
+    box-shadow: 5px 5px 0px rgb(255, 255, 255);
+}
+nav span{
+    color:rgb(184, 89, 22) ;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+}
+
+
+nav ul li a::before{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+   
+    background-color: rgb(184, 89, 22);
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    transition: 0.2s linear;
+
+}
+nav ul li a:hover::before{
+    width: 100%;
+    
+}
+nav ul li a:hover{
+    color:rgb(184, 89, 22);
+}
+.header {
+    width: 100%;
+    height: 100vh;
+ 
+   
+}
+body{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+.container {
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+    flex-wrap: wrap;
+}
+nav h1{
+    text-transform: capitalize;
+
+    overflow: auto;
+    box-shadow: 5px 5px 0px rgb(255, 255, 255);
+}
+
+nav span{
+    color:rgb(184, 89, 22) ;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+}
+
+
+nav ul li a::before{
+    content: ' ';
+    width: 0%;
+    height: 3px;
+   
+    background-color: rgb(184, 89, 22);
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    transition: 0.2s linear;
+
+}
+nav ul li a:hover::before{
+    width: 100%;
+    
+}
+nav ul li a:hover{
+    color:rgb(184, 89, 22);
+}
+.hedaertext{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+}
+.backgroundimage img{
+    width: 60%;
+    height: 50vh;
+    border-radius: 50%;
+    margin-left:200px;
+    
+    overflow: hidden;
+    box-shadow: 0 0 30px rgb(173, 127, 95) ;
+     animation-name: imageanime;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+  
+}
+@keyframes imageanime {
+    0%{
+        width: 200px;
+        border-radius: 0%;
+    }
+    25%{
+        width: 300px;
+        border-radius: 0%;
+    }
+    50%{
+        width: 300px;
+        border-radius: 100%;
+
+    }
+    75%{
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    100%{
+        border-radius: 0%;
+        width: 200px;
+    }
+
+    
+} 
+.textarea h2{
+    font-size: 2rem;
+}
+.textarea h2 span{
+    color:  rgb(173, 127, 95);
+}
+.textarea h1{
+    font-size: 2rem;
+    color: rgb(73, 146, 151);
+}
+.textarea p{
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+}
+.bottuns {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+
+}
+.bottuns button{
+   
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 0 10px rgb(173, 127, 95) ;
+    
+}
+.bottuns button a{
+    color:darkgoldenrod;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    height: 30px;
+    font-weight: bolder;
+    width: 100px;
+}
+.bottuns button a{
+    width: 100px;
+}
+.bottuns button:hover{
+    background-color: darkgreen;
+}
+
+.bottuns button a:hover{
+    background-color: darkgreen;
+}
+
+
+
+.iconsparts{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 50px;
+    margin-right: 100px;
+    
+    
+}
+.icon1 {
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    border: 0.2rem solid  rgb(173, 127, 95) ;
+    border-radius: 50%;
+    padding-left: 7px;
+    padding-top: 6px;
+    transition: 0.2s linear;
+    
+}
+.icon1 a img{
+    border-radius: 50%;
+  transition: 0.2s linear;
+
+  
+  background-color: rgb(173, 127, 95);
+}
+.icon1:hover{
+    
+    background-color: rgb(173, 127, 95);
+
+}
+.icon1:hover{
+    transition: all -1s;
+    transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .backgroundimage img:hover{
+ animation-name:newanime ;
+ animation-duration: 2s;
+ animation-delay: 1s;
+  animation-iteration-count: infinite;
+    
+}
+@keyframes newanime {
+   
+    50%{
+        transform: scale(1.05s);
+    }
+   
+} */
+
